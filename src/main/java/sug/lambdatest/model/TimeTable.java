@@ -28,4 +28,9 @@ public class TimeTable {
     public Time getArrTime() {
         return arrTime;
     }
+
+    @Override
+    public String toString() {
+        return "TimeTable for " + route + ", starting at: " + depTime + " and arriving at: " + arrTime;
+    }
 }

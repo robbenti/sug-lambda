@@ -38,4 +38,9 @@ public class Route {
             add(arrival);
         }};
     }
+
+    @Override
+    public String toString() {
+        return "Route from: " + departure + " to: " + arrival + " via: " + stops;
+    }
 }

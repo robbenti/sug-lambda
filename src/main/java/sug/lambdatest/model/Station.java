@@ -24,4 +24,9 @@ public class Station {
     public List<Facility> getFacilities() {
         return facilities;
     }
+
+    @Override
+    public String toString() {
+        return "Station: " +  name + " in " + city;
+    }
 }

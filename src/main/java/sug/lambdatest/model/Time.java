@@ -29,4 +29,9 @@ public class Time implements Comparable<Time> {
         int mins = minInDay() + duration;
         return new Time(mins / 60, mins % 60);
     }
+
+    @Override
+    public String toString() {
+        return hour + ":" + min;
+    }
 }
