@@ -39,8 +39,8 @@ public class DataBase {
             int min = r.nextInt(60);
             int duration = r.nextInt(300) + 60;
             timeTables.add( new TimeTable(i++, route, new Time(hour, min), new Time(hour, min).after(duration)) );
-            timeTables.add( new TimeTable(i++, route, new Time(hour + 2, min), new Time(hour, min).after(duration)) );
-            timeTables.add( new TimeTable(i++, route, new Time(hour + 4, min), new Time(hour, min).after(duration)) );
+            timeTables.add( new TimeTable(i++, route, new Time(hour + 2, min), new Time(hour + 2, min).after(duration)) );
+            timeTables.add( new TimeTable(i++, route, new Time(hour + 4, min), new Time(hour + 4, min).after(duration)) );
         }
         return timeTables;
     }

@@ -30,4 +30,12 @@ public class Route {
     public List<Station> getStops() {
         return stops;
     }
+
+    public List<Station> getAllStations() {
+        return new ArrayList<Station>() {{
+            add(departure);
+            addAll(stops);
+            add(arrival);
+        }};
+    }
 }
