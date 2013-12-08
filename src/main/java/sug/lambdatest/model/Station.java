@@ -29,4 +29,14 @@ public class Station {
     public String toString() {
         return "Station: " +  name + " in " + city;
     }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return obj instanceof Station && name.equals(((Station)obj).getName());
+    }
 }

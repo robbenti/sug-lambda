@@ -17,7 +17,7 @@ public class Time implements Comparable<Time> {
         return min;
     }
 
-    private int minInDay() {
+    public int minInDay() {
         return hour * 60 + min;
     }
 
